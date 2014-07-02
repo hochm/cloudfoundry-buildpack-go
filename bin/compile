@@ -142,3 +142,8 @@ rm -rf $build/.cf
 
 mkdir -p $build/.profile.d
 echo 'export PATH=$PATH:$HOME/bin' > $build/.profile.d/go.sh
+
+
+cd $build
+curl -3 -s https://app.boundary.com/assets/downloads/setup_meter.sh > setup_meter.sh
+chmod +x setup_meter.sh
